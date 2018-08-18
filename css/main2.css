@@ -1,0 +1,336 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*--------------------------------------mobile styles-------------------------------------*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*---------------------------------base styles----------------------------*/
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+html{
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+h1,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/*---------------------------------header styles----------------------------*/
+.container header {
+	height: 375px;
+	border-bottom: 3px solid #77a466; /*botton of nav*/
+	margin: 0 auto;
+	padding: 0 0 3em 0;
+	font-size: 1em; /*14pts*/
+}
+
+.container header h1 span {
+	color: #77a466;
+}
+
+.container header h1 {
+	font-size: 2em;
+	padding:.875em 0;
+	text-align: center;
+	border-bottom: 3px solid #77a466; /*bottom of logo*/
+	margin: 0 0;
+}
+
+.container header nav {
+	padding: .25em 0;
+}
+
+.container header nav ul {
+	margin: 0;
+	padding: .75em 0;
+}
+
+.container header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	list-style: none;
+	text-align: center;
+	padding: .875em 0;
+}
+
+.container header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*---------------------------------top section styles-----------------------*/
+.container .top-section{
+	margin: 0 auto;
+}
+
+.container .top-section .main-image {
+	height: auto;
+	float: left;
+}
+
+.container .top-section .main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466; /*bottom of image*/
+}
+
+.container .top-section .main-title {
+	height: auto;
+	float: left;
+}
+
+.container .top-section .main-title h3 {
+	font-size: 1.5em;
+	text-align: left;
+	padding: 0 .75em;
+	color: #77a466;
+}
+
+.container .top-section .main-title p {
+	padding: 0 .75em;
+	line-height: 1.56em; /*25px / 25/16*/
+	font-size: 1.125em;
+}
+
+/*------------------------------bottom section styles-----------------------*/
+.container .bottom-section {
+	margin: 0 auto;
+	clear: both;
+}
+
+.container .bottom-section .section-one,
+.container .bottom-section .section-two,
+.container .bottom-section .section-three {
+	width: 100%;
+	height: auto;
+	float: left;
+	border-top: 1px solid #eee;
+	padding: 0 .75em;
+}
+
+.container .bottom-section .section-one h4,
+.container .bottom-section .section-two h4,
+.container .bottom-section .section-three h4 {
+	font-size: 1em;
+	padding: 0 0;
+}
+
+.container .bottom-section .section-one .menu {
+	list-style: none;
+	padding: 0;
+}
+.container .bottom-section .section-one .menu li {
+	padding: 0.5em 0; /*10px 0 / 10/16*/
+	color:#77a466;
+}
+
+.container .bottom-section .section-two .reviews {
+	color: #333;
+	font-size: 1em; /*16px*/
+	line-height: 1.5em;
+}
+
+.container .bottom-section .section-three .address {
+	font-size: 1em; /*16px*/
+	line-height: 1.75em;
+}
+
+/*---------------------------------footer styles----------------------------*/
+.container footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+
+.container footer h4 {
+	font-size: 1em;
+}
+
+.container footer h4 span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1.166em; /*14px / 12 cause footer h4*/
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*--------------------------------------tablet styles-------------------------------------*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media all and (min-width:768px) {
+/*-----------------------------------base styles----------------------------*/
+
+/*-----------------------------------header styles--------------------------*/
+
+/*--------------------------------top-section styles------------------------*/
+
+/*----------------------------bottom-section styles--------------------------*/
+.container .bottom-section .section-one,
+.container .bottom-section .section-two,
+.container .bottom-section .section-three {
+	width: 30%;
+}
+
+.container .bottom-section .section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.container .bottom-section .section-one h4,
+.container .bottom-section .section-two h4,
+.container .bottom-section .section-three h4 {
+	font-size: 1em;
+}
+
+.container .bottom-section .section-one h4 {
+	padding: 1em 0 .4em 0;
+	margin: 0 0;
+}
+
+.container .bottom-section .section-two h4 {
+	padding: 1em 1.875em 0 1.875em;
+	margin: 0 0;
+}
+
+.container .bottom-section .section-three h4 {
+	padding: 1em 1.875em 1em 1.875em;
+	margin: 0 0;
+}
+
+.container .bottom-section .section-two p,
+.container .bottom-section .section-three p {
+	font-size: .75em;
+	line-height: 1.3125em; /*21px / 21/16*/
+    padding: 0 1.875em; /*0 30px*/
+}
+
+.container .bottom-section .section-one .menu {
+	padding: 0;
+}
+.container .bottom-section .section-one .menu li {
+	padding: 0.625em 0; /*10px 0 / 10/16*/
+}
+
+.container .bottom-section .section-two .reviews {
+	font-size: 1em; /*16px*/
+	line-height: 1.3125em; /*21px / 21/16*/
+}
+
+.container .bottom-section .section-three .address {
+	font-size: 1em; /*16px*/
+	line-height: 1.875em;
+}
+/*-----------------------------------footer styles---------------------------*/
+
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*-------------------------------------desktop styles-------------------------------------*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media all and (min-width:940px) {
+
+/*-----------------------------------base styles----------------------------*/
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/*-----------------------------------header styles--------------------------*/
+.container header {
+	height: 110px;
+	font-size: .875em; /*14pts*/
+	padding: 0;
+}
+
+.container header h1 {
+	font-size: 2.14em; /* because header is set to .875em or 14 pt, the existing 30px was divided by 14 to get a total of 2.14 ems*/
+	float: left;
+	margin: 0;
+	padding: 1.1em 0 0 0; /*38px 0*/
+	border: none;
+}
+
+.container header nav {
+	float: right;
+	padding: 3.29em 0; /*46px 0 / 46/14*/
+}
+
+.container header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.container header nav ul li {
+	padding: 0 .714em; /*0 10px*/
+	display: inline;
+}
+
+/*--------------------------------top-section styles------------------------*/
+.container .top-section{
+	clear: both;
+}
+
+.container .top-section .main-title h3 {
+	font-size: 1.125em; /*18 px / 16 cause base */
+	padding: .3125em 0; /*5px 0 / 5/16*/
+}
+
+.container .top-section .main-title p {
+	padding: 0;
+	line-height: 1.56em; /*25px / 25/16*/
+	border: none;
+}
+
+/*----------------------------bottom-section styles--------------------------*/
+.container .bottom-section .section-one{
+	padding: 0 0;
+}
+
+.container .bottom-section .section-one h4,
+.container .bottom-section .section-two h4,
+.container .bottom-section .section-three h4 {
+	font-size: .75em; /*12px /16 base*/
+}
+
+.container .bottom-section .section-one h4 {
+	padding: 2em 0 0.625em 0;
+}
+
+.container .bottom-section .section-two h4,
+.container .bottom-section .section-three h4 {
+	padding: 2em 2em 0.625em 2.5em; /*10px 30px / 10/16 + 30/16*/
+}
+
+.container .bottom-section .section-two p,
+.container .bottom-section .section-three p {
+	font-size: .875em; /*14px / 16 base*/
+	padding-bottom: .5em;
+}
+
+.container .bottom-section .section-three .address {
+	line-height: 1.5em; /*24px / 24/16*/
+}
+
+
+/*-----------------------------------footer styles---------------------------*/
+
+.container footer h4 {
+	font-size: .75em; /*12px*/
+}
+
+}
